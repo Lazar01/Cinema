@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="stil.css">
+  <script src="skripta.js"></script>
+  <title>Rezervacije</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="pocetna.html">Početna</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="pozadinaRezervacija">
+		<div class="rezervacija">
+		  <h1>Rezervacija</h1>
+		  <form name="rezervacija">
+			<div>
+			  <label for="emailRezervacije">Vaša e-mail adresa:</label>
+			  <input type="email" id="emailRezervacije" class="emailRezervacije"placeholder="Email" required />
+			</div>
+			<div>
+			  <label for="telefon">Vaš broj telefona:</label>
+			  <input type="tel" id="telefon" placeholder="+38160/12-34-567" required/>
+			</div>
+			<div>
+			  <label for="imefilma">Izaberite film:</label>
+			  <div>
+				<select id="imefilma" name="imefilma" required>
+				  <option value="Spiderman 1">Spiderman 1</option>
+				  <option value="Toma">Toma</option>
+                  <option value="Gospodar Prstenova: Povratak kralja">Gospodar Prstenova: Povratak kralja</option>
+				  <option value="Leon: The professional">Leon: The professional</option>
+				</select>
+			  </div>
+			</div>
+			<div><br>
+			  <br />
+				<div class="">
+					<label for="termin">15:00</label>
+					<input type="radio" class="termin" name="termin" value="15:00" checked/>
+				</div>
+				<div class="">
+					<label for="termin">18:00</label>
+					<input type="radio" class="termin" name="termin" value="18:00" />
+				</div>
+				<div class="">
+					<label for="termin">21:00</label>
+					<input type="radio" class="termin" name="termin" value="21:00" />
+				</div>
+			</div>
+			<div class="">
+			  <label for="brojKarata">Broj karata:</label>
+			  <input type="number" id="brojKarata" min="1" max="10" value="1"  required />
+			</div>
+  
+			<input type="submit" onclick="rezervacijeProvera(event)" value="Pošalji"></button>
+		  </form>
+		</div>
+	</div>
+</body>
+</html>

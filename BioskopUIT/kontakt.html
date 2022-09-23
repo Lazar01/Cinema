@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="stil.css">
+  <script src="skripta.js"></script>
+  <title>Kontakt</title>
+</head>
+
+<body style="overflow: hidden;">
+    <ul>
+        <li><a href="pocetna.html">Početna</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a class="active" href="kontakt.html">Kontakt</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <div class="kontaktPozadina">
+        <div class="kontaktDiv">
+          <form name="forma" onsubmit="provera(event)">
+            <label for="ime">Ime</label>
+            <br>
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime" required>
+            <br>
+            <label for="prezime">Prezime</label>
+            <br>
+            <input type="text" id="prezime" name="prezime" placeholder="Vaše prezime" required>
+            <br>
+            <label type="email">Vaš email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="primer@gmail.com" required>
+            <br>
+            <label for="poruka">Poruka</label>
+            <textarea id="poruka" name="poruka" maxlength="500" placeholder="Unesite vašu poruku" style="height:100px" required></textarea>
+        
+            <input type="submit" value="Kontaktiraj" >
+          </form>
+        </div>
+      </div>
+</body>
+</html>

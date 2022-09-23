@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="stil.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="pocetna.html">Početna</a></li>
+        <li><a href="projekcije.html">Projekcije</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a class="active" href="faq.html">FAQ</a></li>
+    </ul>
+</head>
+<body>
+ 
+    <div class="pozadinaFAQ">
+        <div class="upit">
+            <div class="upit__pitanje">
+                <p>Koliko koštaju karte?</p>
+  
+            </div>
+            <div class="upit__odgovor">
+                <p>Cena karata varira i zavisi od termina i bioskopske sale u kojoj se reprodukuje</p>
+  
+            </div>
+        </div>
+        <div class="upit">
+            <div class="upit__pitanje">
+                <p>Gde mogu da izaberem sedište za film za koji sam rezervisao?</p>
+  
+            </div>
+            <div class="upit__odgovor">
+                <p>Kada rezervišete kartu, dobićete povratni email koji će vas dalje uputiti.</p>
+            </div>
+        </div>
+        <div class="upit">
+            <div class="upit__pitanje">
+                <p>Želim da rezervišem celu salu za proslavu. Da li je to moguće?</p>
+  
+            </div>
+            <div class="upit__odgovor">
+                <p>Ako želite da rezervišete celu salu molimo Vas da nas konaktirate preko strane kontakt.</p>
+            </div>
+        </div>
+        <div class="upit">
+            <div class="upit__pitanje">
+                <p>Posao kod vas se čini kao prava prilika za mene, gde da se prijavim?</p>
+  
+            </div>
+            <div class="upit__odgovor">
+                <p>Ukoliko imate želju da se pridružite našem timu molimo Vas da nas kontaktirate preko strane kontakt sa Vašim zahtevom.</p>
+            </div>
+        </div>
+    </div>
+  
+    <script>
+        let answers=document.querySelectorAll(".upit");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

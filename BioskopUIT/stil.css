@@ -1,0 +1,275 @@
+.naslov{
+    background-color: rgb(211, 203, 203);
+    text-align: center;
+    margin-top:0;
+}
+
+h2.naslov{
+    margin-top:-1em;
+    font-size:40px;
+}
+h1.naslov{
+    font-size:50px;
+}
+body{
+    background-image: url("slike/pozadina.jpg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    background-color: #333;
+    font-size:24px;
+  }
+  
+li {
+    display: inline;
+}
+  
+li a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover:not(.active) {
+    background-color: #111;
+}
+  
+.active {
+    background-color: grey;
+}
+.tekstDekoracija{
+    font-size:26px;
+    background-color: rgb(211, 203, 203);
+    margin-top:5em;
+    width:50%;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+.pocetnaSlika{
+  width:100%; 
+  margin-left: auto; 
+  margin-right: auto;
+  height: 60%;
+}
+
+.levoDiv{
+    float:left;
+    width:30%;
+    background-color: rgb(211, 203, 203);
+    margin-left:10%;
+}
+.desnoDiv{
+    float:right;
+    width:30%;
+    background-color: rgb(211, 203, 203);
+    margin-right: 10%;
+}
+
+.levoDiv h2{
+    text-align: center;
+}
+
+.desnoDiv h2{
+    text-align:center;
+}
+.projekcije p{
+    text-align:center;
+}
+.slikeFilma{
+   width:100%;
+    height:15em; 
+}
+.dugmeFilm{
+    margin: 0;
+    position: relative;
+    left: 43%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.divDesno{
+    float:right;
+    width:30%;
+    margin-top: -15.7rem;
+    margin-right: 0.5rem;
+}
+.divLevo{
+    float:left;
+    width:30%;
+}
+.divSredina{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width:30%;
+}
+.slikeGalerija{
+    width:100%;
+    height:15em;
+    border: solid 5px grey;
+}
+.red{
+    margin-top:2%;
+    margin-bottom:2%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  .modal-content {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+input[type=text], textarea, .emailRezervacije, input[type=number],input[type=tel]{
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        width:100%;
+      }
+      
+input[type=submit] {
+        background-color: black;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 43%;
+      }
+      
+.kontaktDiv {
+        border-radius: 5px;
+        background-color: darkgrey;
+        width:100%;
+        position:relative;
+        padding-top: 3em;
+      }
+.kontaktPozadina{
+  margin-top: 5em;
+    width:35%;
+    height:60%;
+    background-color:darkgrey;
+    margin-left:auto;
+    margin-right: auto;
+    opacity: 90%;
+}
+.recenzijePozadina{
+    width:50%;
+    height:50%;
+    background-color:darkgrey;
+    margin-left:auto;
+    margin-right: auto;
+}
+.pozadinaRezervacija{
+    width:50%;
+    height:50%;
+    background-color:darkgrey;
+    margin-left:auto;
+    margin-right: auto;
+}
+.rezervacija{
+    border-radius: 5px;
+        background-color: darkgrey;
+        width:100%;
+        position:relative;
+}
+.greska:focus{
+    border: solid 5px red;
+}
+.pozadinaFAQ {
+    width: 600px;
+    margin: auto;
+  }
+  .upit {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: darkgray;
+    border-radius: 10px;
+  }
+  .upit__pitanje p {
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+  }
+  .upit__odgovor p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: black;
+    border-radius: 10px;
+  }
+  .upit:hover {
+    cursor: pointer;
+  }
+  .upit__odgovor {
+    display: none;
+  }
+  .upit.active .upit__odgovor {
+    display: block;
+  }
